@@ -1,0 +1,116 @@
+.page {
+  &__container {
+    @media screen and (min-width: 981px) {
+      grid-template-areas: '. content';
+      grid-template-columns: calc(100vw - 520px) 520px;
+      grid-template-rows: 100vh;
+    }
+    @media  screen and (min-width: 1681px) {
+      grid-template-columns: calc(100vw - 720px) 720px;
+    }
+    display: grid;
+    grid-template-areas: '.' 'content';
+    grid-template-columns: 100vw;
+    grid-template-rows: 45vh 65vh;
+
+    &::before {
+      display: block;
+      content: '';
+      background-image: url('/assets/images/bg.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      animation-name: fadeIn;
+      animation-timing-function: ease-in-out;
+      animation-duration: 2s;
+    }
+  }
+
+  &__content {
+    @media screen and (min-width: 981px) {
+      padding: 120px;
+      justify-content: center;
+    }
+    @media screen and (min-width: 1681px) {
+      font-size: 24px;
+      line-height: 39px;
+    }
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 58px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+
+    strong {
+      font-weight: 400;
+    }
+  }
+
+  &__heading {
+    @media screen and (min-width: 1681px) {
+      font-size: 75px;
+      line-height: 84px;
+    }
+    font-size: 46px;
+    line-height: 52px;
+    font-weight: 900;
+    margin-bottom: 27px;
+  }
+
+  &__icon-list {
+    margin-top: 42px;
+
+    a {
+      @media screen and (min-width: 1681px) {
+        padding:10px;
+      }
+      width: 30px;
+      height: 30px;
+      padding:5px;
+      transition: border 200ms ease-in-out;
+      border: 1px solid transparent;
+      border-radius: 50%;
+
+      &:hover {
+        border: 1px solid #89BABE;
+
+        svg {
+          fill: #89BABE;
+        }
+      }
+    }
+
+    li {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px;
+      font-size: 0;
+
+      svg {
+        width: 30px;
+        height: 30px;
+        fill: #515369;
+        transition: fill 200ms ease-in-out;
+      }
+    }
+    
+    span {
+      display: none;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
