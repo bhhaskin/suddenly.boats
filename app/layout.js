@@ -2,7 +2,7 @@ import "./globals.scss";
 
 export const metadata = {
   title: "Suddenly | Ericson 41 | 1968 | Hull #2",
-  description: "Solidly built, this early Bruce King design has stood the test of time.",
+  description: "She still floats!",
 };
 
 export default function RootLayout({ children }) {
@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
       <meta property="og:site_name" content="Suddenly | Ericson 41 | 1968 | Hull #2" />
       <meta property="og:title" content="Suddenly | Ericson 41 | 1968 | Hull #2" />
       <meta property="og:type" content="website" />
-      <meta property="og:description" content="Solidly built, this early Bruce King design has stood the test of time." />
+      <meta property="og:description" content="She still floats!" />
       <meta property="og:image" content="/assets/images/card.jpg" />
       <meta property="og:image:type" content="image/jpeg" />
       <meta property="og:image:width" content="1280" />
