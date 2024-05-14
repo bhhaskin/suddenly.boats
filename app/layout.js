@@ -1,15 +1,15 @@
 import "./globals.scss";
 
 export const metadata = {
-  title: "Suddenly... | Ericson 41 | 1968 | Hull #2",
+  title: "Suddenly... | 1968 | Ericson 41 | Hull #2",
   description: "She still floats!",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <meta property="og:site_name" content="Suddenly... | Ericson 41 | 1968 | Hull #2" />
-      <meta property="og:title" content="Suddenly... | Ericson 41 | 1968 | Hull #2" />
+      <meta property="og:site_name" content="Suddenly... | 1968 | Ericson 41 | Hull #2" />
+      <meta property="og:title" content="Suddenly... | 1968 | Ericson 41 | Hull #2" />
       <meta property="og:type" content="website" />
       <meta property="og:description" content="She still floats!" />
       <meta property="og:image" content="/assets/images/card.jpg" />
